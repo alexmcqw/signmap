@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Map Viewer</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="banner">
+        Welcome to the neighborhood!<br>
+        <span class="subheader">All the food and drinks establishments opened in 2025, per <a href="https://www.livexyz.com/" target="_blank" rel="noopener">livexyz.com</a></span>
+    </div>
+    <div id="map"></div>
+    <div id="controls">
+        <div id="filters">
+            <!-- Filters will be added dynamically -->
+        </div>
+        <div id="stats">
+            <p>Total markers: <span id="total-markers">0</span></p>
+            <p>Food & Drink markers: <span id="food-drink-markers">0</span></p>
+            <p>Visible markers: <span id="visible-markers">0</span></p>
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
