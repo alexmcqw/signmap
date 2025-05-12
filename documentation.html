@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Project Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { max-width: 700px; margin: 40px auto; font-size: 1.1em; background: #fafbfc; }
+        h1 { margin-top: 0; }
+        .back-link { margin-bottom: 2em; display: block; }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-link">← Back to Map</a>
+    <h1>Documentation</h1>
+    <p>This project visualizes food and drink establishments in NYC opened in 2025, using a CSV data source and Leaflet.js for mapping.</p>
+    <h2>How to Use</h2>
+    <ul>
+        <li>Pan and zoom the map to explore locations.</li>
+        <li>Click on emoji pins to view details and images in popups.</li>
+        <li>Use the filters and search to narrow down results.</li>
+    </ul>
+    <h2>Data Fields</h2>
+    <ul>
+        <li><strong>Name</strong>: The establishment's name</li>
+        <li><strong>Category</strong>: Pulled from <code>tags.name</code></li>
+        <li><strong>Website</strong>: Link to the official site</li>
+        <li><strong>Image</strong>: Photo of the establishment</li>
+        <li><strong>Address</strong>: Street address and postcode</li>
+        <li><strong>Verified on</strong>: Date the place was verified open</li>
+    </ul>
+    <h2>About the Data</h2>
+    <p>Data is sourced from <a href="https://www.livexyz.com/" target="_blank" rel="noopener">livexyz.com</a> and is current as of 2025 (so far).</p>
+    <h2>Credits</h2>
+    <ul>
+        <li>Map tiles by <a href="https://carto.com/attributions" target="_blank" rel="noopener">CARTO</a></li>
+        <li>Mapping by <a href="https://leafletjs.com/" target="_blank" rel="noopener">Leaflet.js</a></li>
+        <li>Data by <a href="https://www.livexyz.com/" target="_blank" rel="noopener">livexyz.com</a></li>
+    </ul>
+</body>
+</html> 

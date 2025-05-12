@@ -148,4 +148,21 @@ body {
     text-align: center;
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
     pointer-events: auto;
+}
+
+.doc-link {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 1em;
+    color: #1976d2;
+    text-decoration: none;
+    font-weight: 500;
+    background: #f5f7fa;
+    border-radius: 6px;
+    padding: 4px 12px;
+    transition: background 0.2s, color 0.2s;
+}
+.doc-link:hover {
+    background: #e3eaf3;
+    color: #0d47a1;
 } 

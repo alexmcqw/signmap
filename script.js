@@ -106,9 +106,9 @@ function createMarkers(rows) {
             if (row.name || row.title) {
                 popupContent += `<h3>${row.name || row.title}</h3>`;
             }
-            // Add subcategory if present
-            if (row['subcategoriesPrimary.name']) {
-                popupContent += `<div class="subcategory">${row['subcategoriesPrimary.name']}</div>`;
+            // Add category from tags.name if present
+            if (row['tags.name']) {
+                popupContent += `<div class="subcategory">${row['tags.name']}</div>`;
             }
             // Add website if present
             if (row['urls.website']) {
@@ -129,6 +129,11 @@ function createMarkers(rows) {
             // Add category/type if available
             if (row.category) {
                 popupContent += `<p><strong>Category:</strong> ${row.category}</p>`;
+            }
+            // Add 'Verified on' date if present
+            if (row.placeCreationDate) {
+                const dateOnly = row.placeCreationDate.split('T')[0];
+                popupContent += `<p class="verified"><strong>Verified on:</strong> ${dateOnly}</p>`;
             }
             // Add any other relevant fields as needed...
             popupContent += '</div>';
